@@ -1,0 +1,76 @@
+
+  .gradiendBtn {
+    background: rgb(155, 204, 245);
+    background: linear-gradient(
+      90deg,
+      rgba(155, 204, 245, 1) 38%,
+      rgba(85, 156, 215, 1) 67%
+    );
+  }
+
+  /* From Uiverse.io by niat786 */
+  .botonVerMas {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #6866e4, #4ce3f7);
+    /* border-radius: 20px; */
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+    &:hover {
+      background-position: right center;
+      background-size: 200% auto;
+      transition: all 1s ease-out;
+      -webkit-animation: pulse 2s infinite;
+      animation: pulse512 2s infinite;
+    }
+}
+.boton:not(:hover) {
+      transition: all 1s ease-out;
+  }
+  @keyframes pulse512 {
+    0% {
+      box-shadow: 0 0 0 0 #05bada66;
+    }
+
+    70% {
+      box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+      box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+  }
+
+/* estilado mas simple */
+.botonBlueGradient {
+ 
+    background-image: linear-gradient(30deg, #6866e4, #4ce3f7);
+   
+    /* &:hover {
+      background-position: right center;
+      background-size: 200% auto;
+      transition: all 1s ease-out;
+      -webkit-animation: pulse 1s infinite;
+      animation: pulse512 1s infinite;
+    } */
+    
+  }
+  /* @keyframes pulse512 {
+    0% {
+      box-shadow: 0 0 0 0 #0fc5e6cb;
+    }
+
+    70% {
+      box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+      box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+  } */
+
+
+
+

@@ -1,0 +1,76 @@
+{
+  "es": {
+    "Biografia": {
+      "apodo": "Noga Kurumi",
+      "cargo": "Edición de video y Desarrollador de Videojuegos",
+      "DetalleCargo": "Modelado y animación 3D, Motion Graphics en AF, Desarrollo de juegos en UE5",
+      "pais": "Argentina",
+      "ir_hacia_aboutme": "Acerca de mi",
+      "imagenNoga": "../../public/assets/foto JulianRadius.png",
+      "imagenLogo": "../../public/assets/LogoNogaKurumiSVG.svg",
+      "sobreMi1": "Llevo más de 5 años trabajando en producción audiovisual. Trabajo con múltiples software como Adobe Premiere Pro, After Effects y Blender. Tengo conocimientos de modelado y animación 3D en el software Blender, además desarrollo y programo videojuegos en Unreal Engine 5 y Unity.",
+      "sobreMi2": "Edito videos desde muy joven, trabajo principalmente con Adobe Premiere Pro, After Effects, Photoshop y Blender. Destaco por mi rapidez para editar videos sin sacrificar la calidad. He editado más de 200 videos y he trabajado para más de 6 creadores diferentes a lo largo de los años.",
+      "clientes": [
+        {
+          "id": 1,
+          "nombre": "Tomex",
+          "img": "../../public/assets/tomexImagen.jpg",
+          "opinion": "Tras 2 años de trabajo con Noga puedo decir que sus tiempos de entrega siempre son los correctos y puede adaptar la edición a diferentes situaciones sin problema, siempre intenta mejorar y entregar un mejor servicio."
+        },
+        {
+          "id": 2,
+          "nombre": "JasperDev",
+          "img": "../../public/assets/Jasper.jpg",
+          "opinion": "Es extremadamente rápido, entiende la importancia de entregar los videos a tiempo (o incluso antes), demuestra un nivel muy competente en edición de videos en Premiere y tiene un estilo de edición muy versátil."
+        },
+        {
+          "id": 3,
+          "nombre": "LuisDev",
+          "img": "../../public/assets/LuisDev.jpg",
+          "opinion": "Siempre me impresiona su velocidad y eficiencia. Noga tiene un don para comprender rápidamente exactamente lo que se necesita y entregar ediciones de alta calidad mucho antes de la fecha límite. Es raro encontrar a alguien tan confiable y rápido en el mundo de la edición, y no puedo recomendarlo lo suficiente a cualquiera que busque un servicio de edición de video de primer nivel."
+        }
+      ],
+      "trabajos": [
+        {
+          "id": "1",
+          "titulo": "Hice PLANTS VS ZOMBIES en 24 HORAS y RTX",
+          "url": "https://www.youtube.com/watch?v=qEJ5XcqLxmI",
+          "img": "../../public/assets/miniaturaVideo1.jpg"
+        },
+        {
+          "id": "2",
+          "titulo": "si insulto... suena música infantil 🥺",
+          "url": "https://www.youtube.com/watch?v=3dC9lHf4CCM",
+          "img": "../../public/assets/miniaturaVideo2.jpg"
+        },
+        {
+          "id": "3",
+          "titulo": "Hice FIREBOY & WATERGIRL en UNREAL ENGINE 5",
+          "url": "https://www.youtube.com/watch?v=dXmCM7Q1je4",
+          "img": "../../public/assets/miniaturaVideo3.jpg"
+        },
+        {
+          "id": "4",
+          "titulo": "Entré a la DARK NET “el sitio más ENFERMO de INTERNET”",
+          "url": "https://www.youtube.com/watch?v=mwk2txknBts",
+          "img": "../../public/assets/miniaturaVideo4.jpg"
+        },
+        {
+          "id": "5",
+          "titulo": "Hice un JUEGO EN MI CELULAR (ANDROID)...",
+          "url": "https://www.youtube.com/watch?v=FcPNPwnhKJE&t=1s",
+          "img": "../../public/assets/miniaturaVideoJasper.jpg"
+        }
+      ]
+    }
+  },
+
+  "en": {
+    "Biography": {
+      "nickname": "Noga Kurumi",
+      "role": "Video Editing and Game Developer",
+      "roleDetail": "3D modeling and animation, Motion Graphics in AE, Game development in UE5",
+      "country": "Argentina"
+    }
+  }
+}

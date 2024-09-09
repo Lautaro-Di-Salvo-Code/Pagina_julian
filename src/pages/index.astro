@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import TechThatUse from '../components/TechThatUse/TechThatUse.astro';
+import OpinionClients from '../components/OpinionClients/OpinionClients.jsx'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import BetterWorks from '../components/BetterWorks/BetterWorks.astro';
+import Biografy from '../components/biblioografy/Biografy.astro';
+import AboutMe from '../components/AboutMe/AboutMe.astro'
+import {ContactMe} from '../components/contactMe/ContactMe.jsx'
+---
+
+<Layout title="Soy Noga Kurumi">
+		<Biografy/>
+		<TechThatUse/>
+		<BetterWorks />
+		<OpinionClients  client:only="react"/>
+		<AboutMe />
+		<ContactMe client:only="react"/>
+</Layout>
