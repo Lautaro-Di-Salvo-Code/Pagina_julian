@@ -1,0 +1,23 @@
+---
+import nav from "./nav.json";
+---
+
+<nav class=" mx-auto Nav fixed hidden sm:block  w-full z-50 backgroundBlue anotherBlueDark" id="bibliografy">
+ 
+    <ul class=" flex justify-end gap-[2rem] h-[12vh] items-center mx-auto max-w-[1000px] ">
+    <div class="w-[39%]">
+        <img
+          class="h-auto w-[150px] "
+          src="../../../public/assets/LogoNogaKurumi.png"
+          alt=""
+        />
+    </div>
+    {
+      nav.map((e) => (
+        <a class="cursor-pointer p-2" href={e.href}>
+          {e.title}
+        </a>
+      ))
+    }
+  </ul>
+</nav>

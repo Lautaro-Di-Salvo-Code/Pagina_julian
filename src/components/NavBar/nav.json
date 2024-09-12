@@ -1,0 +1,23 @@
+[
+    
+    {
+        "title": "Biografía",
+        "href": "#biografy"
+    },
+    {
+        "title": "Trabajos",
+        "href": "#trabajos"
+    },
+    {
+        "title": "Testimonios",
+        "href": "#testimonios"
+    },
+    {
+        "title": "Sobre Mi",
+        "href": "#sobremi"
+    },
+    {
+        "title": "Contacto",
+        "href": "#contacto"
+    }
+]

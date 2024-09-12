@@ -21,6 +21,7 @@ const { title } = Astro.props;
     />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    
   </head>
   <body>
     <slot />
@@ -28,13 +29,71 @@ const { title } = Astro.props;
 </html>
 
 <style is:global>
+/* .gradienteImg {
+    mask-image: linear-gradient(#000000 50%, transparent);
+  }
+  .gradiendBtn {
+    background: rgb(93, 134, 167);
+    background: linear-gradient(
+      90deg,
+      rgb(92, 134, 168) 38%,
+      rgba(85, 156, 215, 1) 67%
+    );
+  } */
+
+  /* .botoN {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #6866e4, #4ce3f7);
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+
+    @media screen and (width > 600px) {
+      &:hover {
+        background-position: right center;
+        background-size: 200% auto;
+        transition: all 1s ease-out;
+        -webkit-animation: pulse 2s infinite;
+        animation: pulse512 2s infinite;
+      }
+    }
+    .boton:not(:hover) {
+      transition: all 1s ease-out;
+      -webkit-animation: pulse 2s infinite;
+      animation: pulse512 2s infinite;
+    }
+    @keyframes pulse512 {
+      0% {
+        box-shadow: 0 0 0 0 #05bada66;
+      }
+
+      70% {
+        box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+      }
+    }
+  } */
+
+  
+  .backgroundBlue{
+    background-color: #102356;
+  }
+  .anotherBlueDark{
+    background-color: #242344;
+  }
   html{
     scroll-behavior: smooth;
     scrollbar-width: thin;
-    scrollbar-color: #5EAFF2 #ffffff;
+    scrollbar-color: #102356 #ffffff;
   }
   body {
-    background-color: #0284f0;
+    color-scheme: light dark;
+    background-color:light-dark(#102356, #121728) ;
 	color: #fff;
     font-family: "Roboto", sans-serif;
     font-weight: 900;

@@ -8,9 +8,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-// let index = 1
-
-
 
 const OpinionClients = () => {
 
@@ -29,8 +26,8 @@ const OpinionClients = () => {
 
   console.log(view)
   return (
-    <section className="h-[90vh] sm:h-[80vh] sm:my-[7rem] py-[3rem]">
-      <h2 className="text-center flex justify-center text-[1.5rem] my-[3rem]  h-[5vh]">Opiniones de mis clientes</h2>
+    <section className="h-[90vh] sm:h-[80vh] sm:my-[7rem] py-[5rem]" id="testimonios">
+      <h2 className="text-center flex justify-center text-size_text_mobile sm:text-size_text_desk my-[3rem]  h-[5vh]">Qué Dicen Los Creadores De Mi</h2>
       <div className="py-[3rem] flex  gap-3 m-0 h-fit px-5 w-full  sm:w-[550px] mx-auto" >
 
         <Swiper
@@ -47,7 +44,7 @@ const OpinionClients = () => {
           {
             ClientsOpinion.map((e) => (
 
-              <SwiperSlide key={e.id}> <ul className="h-[35rem] mx-auto cursor-pointer  bg-[#3d6f97]   rounded-sm p-3 w-fit  sm:w-[25rem] botonBlueGradient">
+              <SwiperSlide key={e.id}> <ul className="h-[35rem] mx-auto cursor-pointer  backgroundBlue anotherBlueDark   rounded-sm p-3 w-fit  sm:w-[25rem] ">
                 <img
                   className="h-auto w-[150px] max-w-[200px] mx-auto rounded-md p-4"
                   src={e.img}

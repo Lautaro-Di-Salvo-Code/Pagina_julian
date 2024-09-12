@@ -1,4 +1,4 @@
-
+/* 
   .gradiendBtn {
     background: rgb(155, 204, 245);
     background: linear-gradient(
@@ -8,12 +8,10 @@
     );
   }
 
-  /* From Uiverse.io by niat786 */
   .botonVerMas {
     border: none;
     color: #fff;
     background-image: linear-gradient(30deg, #6866e4, #4ce3f7);
-    /* border-radius: 20px; */
     background-size: 100% auto;
     font-family: inherit;
     font-size: 17px;
@@ -43,21 +41,20 @@
     }
   }
 
-/* estilado mas simple */
 .botonBlueGradient {
  
     background-image: linear-gradient(30deg, #6866e4, #4ce3f7);
    
-    /* &:hover {
+    &:hover {
       background-position: right center;
       background-size: 200% auto;
       transition: all 1s ease-out;
       -webkit-animation: pulse 1s infinite;
       animation: pulse512 1s infinite;
-    } */
+    }
     
   }
-  /* @keyframes pulse512 {
+  @keyframes pulse512 {
     0% {
       box-shadow: 0 0 0 0 #0fc5e6cb;
     }
@@ -69,8 +66,8 @@
     100% {
       box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
     }
-  } */
+  }
 
 
 
-
+ */

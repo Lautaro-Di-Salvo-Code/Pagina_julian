@@ -4,13 +4,17 @@ export default {
 	theme: {
 		extend: {
 			backgroundColor: {
-				"bg-color1": "#F3F9FE",
-				"bg-color2": "#9BCCF5",
-				"bg-color3": "#5EAFF2",
-				"bg-color4": "#0284F0"
+				"bg-color1": "#102356",
+				"bg-color2": "#242344",
+				"bg-color3": "#1A1631",
+				"bg-color4": "#121728"
 			},
 			padding: {
 				"paddingGeneral": " 0 1rem"
+			},
+			fontSize:{
+				"size_text_desk": "3rem",
+				"size_text_mobile": "2rem"
 			}
 		}
 	},

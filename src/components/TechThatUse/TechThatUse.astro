@@ -3,36 +3,15 @@
 import Tech from './tech.json'
 ---
 
-<section class="h-fit my-[2rem] py-[2rem] px-4">
-  <h2 class="text-center flex justify-center text-[1.5rem] my-[3rem]  h-[7vh]">Tecnologias que utilizo para trabajar</h2>
-  <div class="  flex  flex-wrap  justify-center gap-6 w-fit mx-auto max-w-[900px] rounded-sm ">
+<section id="tech" class="h-fit my-[2rem] py-[2rem] px-4">
+  <h2 class="text-center flex justify-center min-w-[298px] text-size_text_mobile sm:text-size_text_desk my-[3rem]  h-[7vh]">Tecnologias que utilizo para trabajar</h2>
+  <div class="  flex  flex-wrap  justify-center gap-6 w-fit mx-auto max-w-[1000px] rounded-sm h-[40vh]  sm:h-0 ">
     {
       Tech.map(e => (
-        <p class="text-[13px] flex justify-center text-center    items-center botonBlueGradient rounded-md p-2">{e.title}</p>  
+        <p class="text-[20px] flex justify-center text-center   anotherBlueDark  items-center botonBlueGradient rounded-md p-2">{e.title}</p>  
       ))
     }
   </div>
 
 </section>
 
-<style>
-
-
- /* .slide-track {
-    animation: scroll 40s linear infinite;
-    -webkit-animation: scroll 40s linear infinite;
-}
-
-
-
-@keyframes scroll {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-    100% {
-        -webkit-transform: translateX(calc(-150px * 7));
-        transform: translateX(calc(-150px * 7));
-    }
-} */
-</style>

@@ -5,102 +5,56 @@ const dataBio = data.es.Biografia;
 ---
 
 <header
-  class="p-paddingGeneral grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 w-full mx-auto max-w-[800px] sm:h-[60vh]"
+  id="biografy"
+  class="p-paddingGeneral sm:pt-[10vh] grid grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 w-full mx-auto max-w-[1000px] sm:h-[60vh]"
 >
   <div class="flex flex-col w-full sm:justify-start justify-center">
-    <ul class="w-full flex justify-center sm:justify-start">
-      <img
-        class="h-auto w-[250px] flex justify-center"
-        src={dataBio.imagenLogo}
-        alt=""
-      />
-    </ul>
-    <ul class="w-full flex sm:justify-start justify-center">
-      <h1 class="text-[1.5rem] sm:text-[2.5rem]">Soy <i>{dataBio.apodo}</i></h1>
-    </ul>
-    <ul class="flex flex-col gap-3">
-      <ul class="w-full flex sm:justify-start justify-center">
-        <descripction class="text-center sm:text-start"
-          >{dataBio.cargo}</descripction
-        >
-      </ul>
-      <ul class="w-full flex sm:justify-start justify-center">
-        <h2 class="text-center sm:text-start max-w-[326px]">
-          {dataBio.DetalleCargo}
-        </h2>
+    <section class="h-[45vh] grid place-content-center">
+      <ul class="flex justify-center">
+        <img
+          class="sm:hidden h-auto w-[219px]"
+          src="../../../public/assets/LogoNogaKurumi.png"
+          alt=""
+        />
       </ul>
 
-      <ul
-        class="w-[229px] sm:mx-0 mx-auto sm:max-h-min flex sm:justify-start justify-center botoN"
-      >
-        <a href="#trabajos" class="w-fit p-2 rounded-md">
-          Trabajos Destacados
-        </a>
+      <ul class="w-full flex sm:justify-start justify-center">
+        <h1 class="text-[1.5rem] sm:text-[2.5rem]">
+          Soy <i>{dataBio.apodo}</i>
+        </h1>
       </ul>
-    </ul>
+      <ul class="flex flex-col gap-3">
+        <ul class="w-full flex sm:justify-start justify-center">
+          <descripction class="text-center sm:text-start sm:text-[1.5rem]"
+            >{dataBio.cargo}</descripction
+          >
+        </ul>
+        <ul class="w-full flex sm:justify-start justify-center">
+          <h2 class="text-center sm:text-start max-w-[480px] sm:text-[1.5rem]">
+            {dataBio.DetalleCargo}
+          </h2>
+        </ul>
+
+        <ul
+          class="w-[229px] sm:mx-0 mx-auto sm:max-h-min flex sm:justify-start justify-center botoN"
+        >
+          <a href="#trabajos" class="w-fit p-4 rounded-md hover:bg-[#344b8a]  transition-all 2s ease-in-out backgroundBlue anotherBlueDark">
+            Trabajos Destacados
+          </a>
+        </ul>
+      </ul>
+    </section>
   </div>
 
   <div
     class="flex sm:justify-end items-center justify-center h-[59vh] md:h-[63vh]"
   >
     <img
-      class="h-auto w-[58vw]  gradienteImg rounded-[8rem] sm:w-[250px]"
+      class="h-auto w-[58vw] gradienteImg rounded-[8rem] sm:w-[250px]"
       src={dataBio.imagenNoga}
       alt=""
     />
   </div>
 </header>
 
-<style is:global>
-  .gradienteImg {
-    mask-image: linear-gradient(#000000 50%, transparent);
-  }
-  .gradiendBtn {
-    background: rgb(93, 134, 167);
-    background: linear-gradient(
-      90deg,
-      rgb(92, 134, 168) 38%,
-      rgba(85, 156, 215, 1) 67%
-    );
-  }
-
-  /* From Uiverse.io by niat786 */
-  .botoN {
-    border: none;
-    color: #fff;
-    background-image: linear-gradient(30deg, #6866e4, #4ce3f7);
-    /* border-radius: 20px; */
-    background-size: 100% auto;
-    font-family: inherit;
-    font-size: 17px;
-    padding: 0.6em 1.5em;
-
-    @media screen and (width > 600px) {
-      &:hover {
-        background-position: right center;
-        background-size: 200% auto;
-        transition: all 1s ease-out;
-        -webkit-animation: pulse 2s infinite;
-        animation: pulse512 2s infinite;
-      }
-    }
-    .boton:not(:hover) {
-      transition: all 1s ease-out;
-      -webkit-animation: pulse 2s infinite;
-      animation: pulse512 2s infinite;
-    }
-    @keyframes pulse512 {
-      0% {
-        box-shadow: 0 0 0 0 #05bada66;
-      }
-
-      70% {
-        box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
-      }
-
-      100% {
-        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
-      }
-    }
-  }
-</style>
+<style is:global></style>
