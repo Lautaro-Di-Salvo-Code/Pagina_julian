@@ -1,11 +1,33 @@
 ---
 import nav from "./nav.json";
+// const FunctionForScrollSpy = () => { 
+// 	let $element = document.querySelectorAll("section[data-scroll-spy]")
+// 	const dataScroll = (el) => { 
+// 		el.forEach(element => {
+// 			let Id = element.target.getAttribute("id")
+// 			if(element.isIntersecting){
+// 				document.querySelector(`a[data-scroll-spy][href="#${Id}"]`).classList.add("bg-bg-color1")
+// 			}else{
+// 				document.querySelector(`a[data-scroll-spy][href="#${Id}"]`).classList.remove("bg-bg-color1")
+// 			}
+			
+// 		});
+
+// 	 }
+
+// 	 const observador = new IntersectionObserver(dataScroll, {
+// 		threshold:[0.5, 0.75],
+// 	 })
+// 	 console.log("Observando: "+ observador)
+// 	 $element.forEach(el => observador.observe(el))
+//  }
+//  FunctionForScrollSpy()
 ---
 
 <nav class=" mx-auto Nav fixed hidden sm:block  w-full z-50 backgroundBlue anotherBlueDark" id="bibliografy">
  
     <ul class=" flex justify-end gap-[2rem] h-[12vh] items-center mx-auto max-w-[1000px] ">
-    <div class="w-[39%]">
+    <div class="w-[21%]">
         <img
           class="h-auto w-[150px] "
           src="../../../public/assets/LogoNogaKurumi.png"
@@ -14,7 +36,7 @@ import nav from "./nav.json";
     </div>
     {
       nav.map((e) => (
-        <a class="cursor-pointer p-2" href={e.href}>
+        <a data-scroll-spy class="cursor-pointer p-2 rounded-sm hover:bg-bg-color1  transition-all .5s ease-in" href={e.href}>
           {e.title}
         </a>
       ))

@@ -12,18 +12,19 @@ import React from 'react'
 export const BetterWorks = () => {
   return (
 
-    <section class="h-full sm:h-[85vh] my-[2rem] py-[5rem] px-6" id="trabajos">
-      <h2 class="text-center flex justify-center  my-[3rem] h-[2vh] text-size_text_mobile sm:text-size_text_desk">
+    <section className="h-full sm:h-[85vh] my-[2rem] py-[5rem] px-6" id="trabajos" data-scroll-spy>
+      <h2 className="text-center flex justify-center  my-[3rem] h-[2vh] text-size_text_mobile sm:text-size_text_desk">
         Mis mejores trabajos
       </h2>
       <ul
-        class="flex flex-wrap justify-center gap-[10rem] py-[2rem] max-w-[800px] mx-auto h-[105vh] sm:h-[69vh] "
+        className="flex flex-wrap justify-center gap-[10rem] py-[2rem] max-w-[800px] mx-auto h-[105vh] sm:h-[69vh] "
       >
 
         {
           Works.map((e) => (
             <a
               href={e.url}
+              key={e.id}
               target="_blank"
               className="w-[300px] h-[50px]  relative ">
               <img

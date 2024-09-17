@@ -1,0 +1,42 @@
+---
+import data from '../../Data/data.json'
+
+
+const claveFormSpree = data.es.Biografia.id_formSpree
+---
+
+
+<section  class="  h-full sm:h-[81vh] my-[2rem] py-[5rem]" data-scroll-spy>
+    <h2 id="formulario" class="text-center flex justify-center  my-[3rem] h-[2vh] text-size_text_mobile sm:text-size_text_desk">
+       Contactame
+     </h2>
+
+    <div class="anotherBlueDark p-8 rounded-lg shadow-lg w-full max-w-md flex justify-center mx-auto">
+      
+      <form action={`https://formspree.io/f/${claveFormSpree}`} method="POST" class="space-y-6 w-full p-3">
+        <div>
+          <label for="nombre" class="block text-sm font-medium text-[#fff]">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required class="mt-1 w-full 
+          p-2 border-[#242344] border border-spacing-8
+          rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        
+        <div>
+          <label for="email" class="block text-sm font-medium text-[#fff]">Correo Electrónico</label>
+          <input type="email" id="email" name="email" required class="mt-1 w-full 
+          p-2 border-[#242344] border border-spacing-8
+          rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+  
+        <div>
+          <label for="mensaje" class="block text-sm font-medium text-[#fff]">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required class="mt-1 w-full 
+          p-2 border-[#242344] border border-spacing-8
+          rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        </div>
+  
+        <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition-colors duration-300">Enviar</button>
+      </form>
+    </div>
+  
+  </section>

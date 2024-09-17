@@ -3,11 +3,11 @@ export const ContactMe = () => {
   return (
     <>
 
-      <footer id='contacto' className="backgroundBlue anotherBlueDark text-gray-200 py-[3rem]  sm:h-[15vh] ">
+      <footer id='contacto' className="backgroundBlue anotherBlueDark text-gray-200 py-[3rem]  sm:h-[15vh] " data-scroll-spy>
         <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8 ">
 
           <ul className='flex justify-center gap-6 items-center'>
-            <h3 class="text-[1.5rem] font-bold flex justify-center ">Contactame por mail</h3>
+            <h3 className="text-[1.5rem] font-bold flex justify-center ">Contactame por mail</h3>
             <a
               href="mailto:@nogakurumi.com"
               target="_blank"

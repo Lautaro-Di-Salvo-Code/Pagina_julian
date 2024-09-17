@@ -10,14 +10,19 @@ import AboutMe from '../components/AboutMe/AboutMe.astro'
 import {ContactMe} from '../components/contactMe/ContactMe.jsx'
 import Navbar from '../components/NavBar/Navbar.astro';
 import { BetterWorks } from '../components/BetterWorks/BetterWorks';
+import Form from '../components/Form/Form.astro';
+
+
+
 ---
 
 <Layout title="Soy Noga Kurumi">
-		<Navbar/>
+		<Navbar />
 		<Biografy/>
 		<TechThatUse/>
 		<BetterWorks  client:only="react"/>
 		<OpinionClients  client:only="react"/>
 		<AboutMe />
+		<Form />
 		<ContactMe client:only="react"/>
 </Layout>
